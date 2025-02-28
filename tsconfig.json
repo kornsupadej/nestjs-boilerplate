@@ -1,19 +1,32 @@
 {
   "compilerOptions": {
+    /** modules */
+    "baseUrl": "./",
     "module": "commonjs",
+
+    /** emit */
+    "outDir": "./dist",
     "declaration": true,
+    "sourceMap": true,
     "removeComments": true,
+
+    /** language and environment */
+    "target": "ES2023",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+
+    /** interop constraints */
     "allowSyntheticDefaultImports": true,
-    "target": "ES2023",
-    "sourceMap": true,
-    "outDir": "./dist",
-    "baseUrl": "./",
-    "incremental": true,
-    "skipLibCheck": true,
-    "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
+
+    /** project */
+    "incremental": true,
+
+    /** completeness */
+    "skipLibCheck": true,
+
+    /** type checking */
+    "strictNullChecks": true,
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "noFallthroughCasesInSwitch": false
